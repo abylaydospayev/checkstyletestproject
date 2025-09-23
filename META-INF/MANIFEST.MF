@@ -3,7 +3,6 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Delivarable1
 Bundle-SymbolicName: Delivarable1
 Bundle-Version: 1.0.0.qualifier
-Require-Bundle: net.sf.eclipsecs.core;bundle-version="11.0.0",
- net.sf.eclipsecs.checkstyle
+Require-Bundle: net.sf.eclipsecs.checkstyle
 Automatic-Module-Name: Delivarable1
 Bundle-RequiredExecutionEnvironment: JavaSE-17
