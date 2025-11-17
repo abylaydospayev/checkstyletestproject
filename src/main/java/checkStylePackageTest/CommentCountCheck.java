@@ -4,12 +4,12 @@ import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
 import com.puppycrawl.tools.checkstyle.api.DetailAST;
 import com.puppycrawl.tools.checkstyle.api.TokenTypes;
 
-public class LoopCountCheck extends AbstractCheck {
-    private int loopCount = 0;
+public class CommentCountCheck extends AbstractCheck {
+    private int commentCount = 0;
 
     @Override
     public int[] getDefaultTokens() {
-        return new int[]{TokenTypes.LITERAL_FOR, TokenTypes.LITERAL_WHILE, TokenTypes.LITERAL_DO};
+        return new int[]{TokenTypes.SINGLE_LINE_COMMENT, TokenTypes.BLOCK_COMMENT_BEGIN};
     }
 
     @Override
@@ -20,12 +20,14 @@ public class LoopCountCheck extends AbstractCheck {
 
     @Override
     public void visitToken(DetailAST ast) {
-        loopCount++;
+        commentCount++;
     }
 
     @Override
     public void finishTree(DetailAST rootAST) {
-        log(rootAST.getLineNo(), "Total number of loops: " + loopCount);
-        loopCount = 0;
+        if (rootAST != null) {
+            log(rootAST.getLineNo(), "Total number of comments: " + commentCount);
+        }
+        commentCount = 0;
     }
 }
