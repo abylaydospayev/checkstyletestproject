@@ -1,3 +1,10 @@
+/*
+ * CommentInputs.java
+ * Abylay Dospayev
+ * Cpts 422
+ * Fall 2025
+ */
+
 package inputs;
 
 public class CommentInput {
@@ -10,7 +17,7 @@ public class CommentInput {
         */
         int x = 10;
         
-        // The following lines are Strings, NOT comments. Your check should ignore them.
+        // The following lines are Strings, NOT comments. 
         String fake1 = "// This looks like a comment but is a string";
         String fake2 = "/* This looks like a block comment but is a string */";
     }

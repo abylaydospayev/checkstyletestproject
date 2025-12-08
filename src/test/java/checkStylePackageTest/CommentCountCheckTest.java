@@ -1,3 +1,10 @@
+/*
+ * CommentCountCheckTest.java
+ * Abylay Dospayev
+ * Cpts 422
+ * Fall 2025
+ */
+
 package checkStylePackageTest;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -72,4 +79,3 @@ public class CommentCountCheckTest {
         assertEquals(0, getCommentCount(check));
     }
 }
-

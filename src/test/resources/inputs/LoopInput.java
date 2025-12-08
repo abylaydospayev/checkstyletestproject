@@ -1,3 +1,10 @@
+/*
+ * LoopInput.java
+ * Abylay Dospayev
+ * Cpts 422
+ * Fall 2025
+ */
+
 package inputs;
 
 public class LoopInput {
@@ -13,7 +20,6 @@ public class LoopInput {
         }
 
         // Do-While Loop (Count: 3)
-        // Note: A good metric counts 'do' and 'while' as one single loop structure.
         do {
             System.out.println("Run");
         } while (false);
