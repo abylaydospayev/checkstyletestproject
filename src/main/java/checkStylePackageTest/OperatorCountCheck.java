@@ -42,7 +42,6 @@ public class OperatorCountCheck extends AbstractCheck {
         TokenTypes.DEC,
         TokenTypes.QUESTION,
         TokenTypes.COLON
-        // add more if your README / spec defines more operators
     };
 
     private static final Set<Integer> OPERATOR_SET = new HashSet<>();

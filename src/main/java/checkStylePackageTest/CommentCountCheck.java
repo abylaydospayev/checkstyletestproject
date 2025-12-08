@@ -22,6 +22,11 @@ public class CommentCountCheck extends AbstractCheck {
     public void visitToken(DetailAST ast) {
         commentCount++;
     }
+    
+    @Override
+    public boolean isCommentNodesRequired() {
+        return true;
+    }
 
     @Override
     public void finishTree(DetailAST rootAST) {

@@ -10,7 +10,6 @@ public class LoopCountCheck extends AbstractCheck {
 
     @Override
     public int[] getDefaultTokens() {
-        // We care about for, while, and do-while
         return new int[] {
             TokenTypes.LITERAL_FOR,
             TokenTypes.LITERAL_WHILE,
